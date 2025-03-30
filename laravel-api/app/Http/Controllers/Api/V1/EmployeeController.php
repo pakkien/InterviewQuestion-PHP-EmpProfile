@@ -21,17 +21,18 @@ class EmployeeController extends Controller
        $filter = new EmployeeFilter();
        $queryItem = $filter->transform($request); //['column', 'operator', 'value']
 
+
        if(count($queryItem) == 0) {
-            return new EmployeeCollection(Employee::paginate());
+            return new EmployeeCollection(Employee::query()->orderBy('updated_at', 'desc')->paginate());
        }else {
          //   return new EmployeeCollection(Employee::where($queryItem)->paginate());
-         $employees = Employee::where($queryItem)->paginate();
+         $employees = Employee::where($queryItem)->orderBy('updated_at', 'desc')->paginate();
 
          return new EmployeeCollection($employees->appends($request->query()));
 
        }
        
-        // return Employee::all();
+        //return Employee::all();
        //return new EmployeeCollection(Employee::all());
        //return new EmployeeCollection(Employee::paginate());
     }

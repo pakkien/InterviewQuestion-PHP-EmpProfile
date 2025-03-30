@@ -27,6 +27,8 @@ class EmployeeResource extends JsonResource
             'nationality' => $this->nationality,
             'hire_date' => $this->hire_date,
             'department' => $this->department,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         
         ];
     }
