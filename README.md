@@ -1,3 +1,42 @@
+UI
+1. Employee Table
+![image](https://github.com/user-attachments/assets/01eaabde-953d-40bd-89b6-0c00acc119da)
+2. Create New Employee
+![image](https://github.com/user-attachments/assets/108ddc84-50f9-4f8b-a54e-fccf9e876a06)
+
+
+
+**Note
+1. Using mysql from xampp (Not using csv/json)
+2. Frontend: React + Vite
+3. Backend: Laravel API
+
+**To setup:
+1. install xampp, add new DB named: laravel_api
+![image](https://github.com/user-attachments/assets/7fc8fdfb-f091-4896-a887-725c0a6ee571)
+
+2. Make sure mysql is started in xampp
+![image](https://github.com/user-attachments/assets/2f55a885-7825-4756-86c7-23fb1f04bac1)
+
+3. On laravel-api folder, run command (first time only):
+php artisan migrate:fresh --seed
+4. On laravel-api folder, run command :
+php artisan serve
+5. On react-ui folder, run command (first time only):
+   npm install
+6. On react-ui folder, run command:
+   npm run dev
+
+   
+   
+
+
+
+
+
+
+
+
 # PHP coding test
 
 Simple php test to create and display employee profile
