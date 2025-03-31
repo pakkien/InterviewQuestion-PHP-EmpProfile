@@ -1,6 +1,7 @@
 UI
 1. Employee Table
-![image](https://github.com/user-attachments/assets/01eaabde-953d-40bd-89b6-0c00acc119da)
+![image](https://github.com/user-attachments/assets/e418f1d9-5413-4854-851c-1fa7fc063f14)
+
 2. Create New Employee
 ![image](https://github.com/user-attachments/assets/108ddc84-50f9-4f8b-a54e-fccf9e876a06)
 
